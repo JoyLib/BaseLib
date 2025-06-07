@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--应用主题-->
+    <style name="Theme.AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@drawable/common_window_bg</item>
+        <item name="android:windowContentTransitions">true</item>
+        <!--修复华为荣耀9青春版UnsupportedOperationException-->
+        <item name="selectorSize">@dimen/dp_1</item>
+        <item name="android:textColor">@color/black_0E1B2E</item>
+    </style>
+
+    <!-- 应用启动页(StartingWindow)的theme -->
+    <style name="Theme.AppTheme.StartingWindowTheme" parent="Theme.AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.AppTheme.StartingWindowTheme2" parent="Theme.AppTheme">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="Theme_dialog" parent="Theme.MaterialComponents.Light.Dialog.Alert" />
+
+
+    <style name="Transparent" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/notAnimation</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="notAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+
+    <!-- Text Appearance -->
+    <style name="TextAppearance.Base" parent="">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="TextAppearance.Title" parent="TextAppearance.Base">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Body" parent="TextAppearance.Base">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <!-- Button Styles -->
+    <style name="Button.Base" parent="">
+        <item name="android:background">?attr/colorAccent</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="Button.Primary" parent="Button.Base">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Button.Secondary" parent="Button.Base">
+        <item name="android:background">?attr/colorPrimaryDark</item>
+    </style>
+
+    <!-- Card Styles -->
+    <style name="CardView.Base">
+        <item name="cardBackgroundColor">#FFFFFF</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="strokeColor">#E0E0E0</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+</resources>
